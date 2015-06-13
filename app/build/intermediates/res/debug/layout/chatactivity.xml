@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usename"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:textSize="30dip"
+        android:textColor="#ff08241e"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:layout_marginLeft="18px"
+            />
+
+
+
+
+        <Button
+
+            android:layout_height="41dp"
+            android:text="@string/send"
+            android:id="@+id/button"
+            android:layout_width="75dp"
+            android:layout_marginLeft="10px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onClick"
+            android:background="#ee3caa31"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        />
+    </LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"/>
+
+</LinearLayout><!-- From: file:/C:/Users/mahantesh/Desktop/android/Project-master/android-gcm-client1/app/src/main/res/layout/chatactivity.xml -->

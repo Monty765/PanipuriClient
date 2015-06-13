@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.1\jars\classes.jar"
+        jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="f71a6822470c9eb659d4f4a6cb57b780b35f058b">
-        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\classes-5069890f09b0158b829408c0a44eace6586be722.jar" />
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\classes-1c4ba8d4a0c16b10d9d3e3aa5e827df29a75817b.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
+        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\classes-6116510b0d0c3336438ebe922d63cd650c3a08b2.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\classes-ee438c02547405d70cc7c3ce72d32204e0e60f51.jar" />
+    </item>
+    <item
+        jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-f8aac61279fa45ed2fc3f26e8c7863cbd8adfbe4.jar" />
     </item>
     <item
         jar="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\jars\classes.jar"
@@ -16,11 +37,11 @@
         <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\classes-6116510b0d0c3336438ebe922d63cd650c3a08b2.jar" />
     </item>
     <item
-        jar="C:\Users\mahantesh\.AndroidStudio\android-sdk-windows\extras\android\m2repository\com\android\support\support-v4\19.0.1\support-v4-19.0.1.jar"
+        jar="C:\Users\mahantesh\.AndroidStudio\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="587da9a481ffd341d2fa091704489b89845ddacd">
-        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\support-v4-19.0.1-2973549a69b4016a3df4c17cb7a08fdb07e2a494.jar" />
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\mahantesh\Desktop\android\Project-master\android-gcm-client1\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-3b5c08efe4466b89de3cd14d7b470cf05d36fb01.jar" />
     </item>
 
 </items>

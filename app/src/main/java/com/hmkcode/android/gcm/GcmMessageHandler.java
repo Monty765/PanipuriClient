@@ -26,7 +26,7 @@ public class GcmMessageHandler extends IntentService {
 		// in your BroadcastReceiver.
 		String messageType = gcm.getMessageType(intent);
 		// Keys in the data are shown as extras
-		String title = extras.getString("registration_ids");
+		String title = extras.getString("data");
 		String body = extras.getString("m");
 		// Create notification or otherwise manage incoming push
 		createNotification(title, body);

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hmkcode.android.gcm.test">
+    package="com.detroitteatime.uidemo2.test">
 
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="22" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.hmkcode.android.gcm"
+                     android:targetPackage="com.detroitteatime.uidemo2"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.hmkcode.android.gcm"/>
+                     android:label="Tests for com.detroitteatime.uidemo2"/>
 </manifest>
