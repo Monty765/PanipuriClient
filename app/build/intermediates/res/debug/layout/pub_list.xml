@@ -32,7 +32,6 @@
     android:layout_height="wrap_content"
     android:text="ADD"
     android:layout_alignParentRight="true"
-    android:onClick="addon"
     />
     </LinearLayout>
 </LinearLayout><!-- From: file:/C:/Users/mahantesh/Desktop/android/Project-master/android-gcm-client1/app/src/main/res/layout/pub_list.xml -->

@@ -55,10 +55,6 @@
             android:label="PP's" >
         </activity>
         <activity
-            android:name=".AdapterMain"
-            android:label="AdapterMain" >
-        </activity>
-        <activity
             android:name=".HomeActivity"
             android:label="PP Users" >
         </activity>

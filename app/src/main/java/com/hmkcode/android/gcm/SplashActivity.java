@@ -95,7 +95,7 @@ Integer i=0;
                     post(serverUrl, paramss);
                     String json = jParser.makeServiceCall(serverUrl, JSONParser.GET);
                     // (Integer.valueOf(json).equals(0)){
-                        Intent intent =new Intent(SplashActivity.this, MainActivity.class);
+                        Intent intent =new Intent(SplashActivity.this, HomeActivity.class);
                         startActivity(intent);
                     //}
                    // else {

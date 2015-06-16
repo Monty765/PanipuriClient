@@ -1,5 +1,6 @@
 package com.hmkcode.android.gcm;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -8,9 +9,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListAdapter;
-import android.widget.SimpleAdapter;
-import android.widget.Toast;
+
+import com.hmkcode.android.adapters.lists.AdapterMain;
+import com.hmkcode.android.adapters.lists.PPlist;
 
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
@@ -30,11 +31,11 @@ public class PP extends ListActivity {
     // Creating JSON Parser object
     JSONParser jParser = new JSONParser();
 
-    ArrayList<HashMap<String, String>> productsList;
+    ArrayList<PPlist> productsList;
 
     // url to get all products list
     private static String url_all_products = "http://www.varaimaa.org/gcm/get_users.php";
-
+    ArrayList<PPlist> pubnameArray = new ArrayList<PPlist>();
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCTS = "products";
@@ -44,24 +45,20 @@ public class PP extends ListActivity {
     // products JSONArray
     JSONArray products = null;
     Button selected;
-
+    AlertDialog alertDialogStores;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pp);
 
         // Hashmap for ListView
-        productsList = new ArrayList<HashMap<String, String>>();
+        productsList = new ArrayList<PPlist>();
 
         // Loading products in Background Thread
         new LoadAllProducts().execute();
 
     }
 
-    public void addon(View view) {
-
-        Toast.makeText(PP.this, "Added to Contacts" , Toast.LENGTH_SHORT).show();
-    }
 
 
             public void gocontact(View v) {
@@ -138,17 +135,15 @@ public class PP extends ListActivity {
                             // Storing each json item in variable
                             String id = c.getString(TAG_PID);
                             String name = c.getString(TAG_NAME);
-                            Log.i("id", id);
-                            Log.i("name", name);
+
                             // creating new HashMap
                             HashMap<String, String> map = new HashMap<String, String>();
 
                             // adding each child node to HashMap key => value
-                            map.put(TAG_PID, id);
-                            map.put(TAG_NAME, name);
-                            Log.d("All Products: ", TAG_NAME);
+
+                            Log.d("pp All Products: ", name);
                             // adding HashList to ArrayList
-                            productsList.add(map);
+                            productsList.add(new PPlist(name,id));
                         }
 
                     } catch (JSONException e) {
@@ -167,15 +162,9 @@ public class PP extends ListActivity {
                     // updating UI from Background Thread
                     runOnUiThread(new Runnable() {
                         public void run() {
-                            /**
-                             * Updating parsed JSON data into ListView
-                             * */
-                            ListAdapter adapter = new SimpleAdapter(
-                                    PP.this, productsList,
-                                    R.layout.pub_list, new String[]{TAG_PID, TAG_NAME},
-                                    new int[]{R.id.pid, R.id.pubname});
-                            // updating listview
+                           AdapterMain adapter = new AdapterMain(PP.this,R.layout.pub_list, productsList);
                             setListAdapter(adapter);
+                            Log.d("pp All Products: ", "loaded");
                         }
                     });
 

@@ -55,10 +55,6 @@
             android:label="PP&apos;s" >
         </activity>
         <activity
-            android:name="com.hmkcode.android.gcm.AdapterMain"
-            android:label="AdapterMain" >
-        </activity>
-        <activity
             android:name="com.hmkcode.android.gcm.HomeActivity"
             android:label="PP Users" >
         </activity>
